@@ -1,0 +1,38 @@
+-- Created by Vertabelo (http://vertabelo.com)
+-- Last modification date: 2025-03-19 22:14:34.183
+
+-- tables
+-- Table: cancion
+CREATE TABLE cancion (
+    id int  NOT NULL AUTO_INCREMENT,
+    nombre_cancion varchar(250)  NOT NULL,
+    portada varchar(500)  NOT NULL,
+    artista varchar(250)  NOT NULL,
+    anio int  NOT NULL,
+    playlist tinyint  NOT NULL,
+    CONSTRAINT cancion_pk PRIMARY KEY (id)
+);
+
+-- Table: usuario
+CREATE TABLE usuario (
+    id int  NOT NULL,
+    nombre varchar(250)  NOT NULL,
+    apellido varchar(250)  NOT NULL,
+    email varchar(250)  NOT NULL,
+    password varchar(250)  NOT NULL,
+    CONSTRAINT usuario_pk PRIMARY KEY (id)
+);
+
+
+-- Datos
+INSERT INTO `cancion` (`id`, `nombre_cancion`, `portada`, `artista`, `anio`, `playlist`) VALUES
+(1, 'Stuck in the middle', 'https://i.scdn.co/image/ab67616d0000b273a9363a161ad54dde56f594d8', 'Babymonster', 2024, 1),
+(2, 'DRIP', 'https://i.scdn.co/image/ab67616d0000b273119800c5fc88785ee3ed1524', 'Babymonster', 2024, 0),
+(4, 'Permission to dance', 'https://i.scdn.co/image/ab67616d0000b273db49bb80a6398e02037ffa39', 'BTS', 2018, 1),
+(5, 'I DO ', 'https://i.scdn.co/image/ab67616d0000b273e7eeb9af3ee924d8ed069c4e', '(G)I-DLE', 2023, 1),
+(6, 'That's not how this works', 'https://i.scdn.co/image/ab67616d0000b273cb3ff5d5083ab1a2aac42234', 'Charlie Puth', 2022, 1),
+(7, 'Coolkids', 'https://i.scdn.co/image/ab67616d0000b273106fa02aaa287ec63af85aae', 'Echosmith', 2012, 0);
+
+
+-- End of file.
+
