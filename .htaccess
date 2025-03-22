@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /proyecto/
+RewriteRule ^(.*)$ index.php [QSA,L]
