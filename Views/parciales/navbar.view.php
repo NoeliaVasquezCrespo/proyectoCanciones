@@ -12,7 +12,7 @@
                     <a class="nav-link text-light" href="nosotros">Nosotros</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="servicios">Servicios</a>
+                    <a class="nav-link text-light" href="playlist">Playlist</a>
                 </li>
 
                 <?php if(Core\Auth::verificar()): ?>

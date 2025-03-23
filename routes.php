@@ -9,7 +9,7 @@ use App\Controllers\CancionController;
 SimpleRouter::get(BASE_URL .'/', [HomeController::class, 'index']);
 SimpleRouter::get(BASE_URL .'/nosotros', [PaginaController::class, 'nosotros']);
 SimpleRouter::get(BASE_URL .'/contacto', [PaginaController::class, 'contacto']);
-SimpleRouter::get(BASE_URL .'/servicios', [PaginaController::class, 'servicios']);
+SimpleRouter::get(BASE_URL .'/playlist', [CancionController::class, 'verPlaylist']);
 SimpleRouter::post(BASE_URL .'/cancion/agregar', [CancionController::class, 'agregar']);
 SimpleRouter::post(BASE_URL .'/cancion/actualizar/{id}', [CancionController::class, 'actualizar']);
 SimpleRouter::post(BASE_URL .'/cancion/eliminar/{id}', [CancionController::class, 'eliminar']);

@@ -74,4 +74,10 @@ class CancionController
         return redirect(BASE_URL);
     }
 
+    public function verPlaylist()
+    {
+        $canciones = Cancion::where('playlist', 1)->get();
+        return view('playlist', ['cancionesAgregadas' => $canciones]);
+    }
+
 }

@@ -15,8 +15,8 @@ class PaginaController
         return view('contacto');
     }
 
-    public function servicios()
+    public function playlist()
     {
-        return view('servicios');
+        return view('playlist');
     }
 }
