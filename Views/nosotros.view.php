@@ -14,6 +14,7 @@
     </div>
 
     <div class="text-center mt-5">
+    <p class="text-muted">Para ver el código del proyecto puede ingresar: <a href="https://github.com/NoeliaVasquezCrespo/proyectoCanciones.git">presionando aquí</a></p>
         <p class="text-muted">Elaborado por: <strong>Noelia Neyarí Vásquez Crespo</strong></p>
     </div>
 </div>

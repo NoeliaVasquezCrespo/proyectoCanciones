@@ -11,7 +11,6 @@ class HomeController
     {
         $canciones = Cancion::all();
 
-        
         $cancionesAgregadas = Cancion::where('playlist', true)->get();
 
         $cancionesPendientes = Cancion::where('playlist', false)->get();

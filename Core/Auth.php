@@ -31,8 +31,7 @@ class Auth
         else
             return true;
     }
-
-
+    
     public static function iniciarSesion()
     {
         if(empty(session_id()))

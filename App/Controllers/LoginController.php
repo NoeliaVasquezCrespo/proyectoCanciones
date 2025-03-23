@@ -17,15 +17,15 @@ class LoginController
         Auth::login($_POST['email'], $_POST['password']);
 
         if (Auth::verificar()) {
-            redirect('/proyecto');
+            redirect(BASE_URL);
         } else {
-            redirect('/proyecto/login');
+            redirect(BASE_URL .'/login');
         }
     }
 
     public function salir()
     {
         Auth::cerrarSesion();
-        redirect('/proyecto/login');
+        redirect(BASE_URL .'/login');
     }
 }

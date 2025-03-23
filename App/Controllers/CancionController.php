@@ -48,10 +48,10 @@ class CancionController
                     'anio' => $_POST['anio'],
                 ]
             );
-            return redirect('/proyecto');
+            return redirect(BASE_URL);
         } else {
             $_SESSION['errores'] = $validador->getErrores();
-            return redirect('/proyecto');
+            return redirect(BASE_URL);
         }
     }
 
@@ -63,7 +63,7 @@ class CancionController
                 'playlist' => $_POST['playlist']
             ]
         );
-        return redirect('/proyecto');
+        return redirect(BASE_URL);
     }
 
     public function eliminar($id)
@@ -71,7 +71,7 @@ class CancionController
         $cancion = Cancion::find($id);
         $cancion->delete();
 
-        return redirect('/proyecto');
+        return redirect(BASE_URL);
     }
 
 }

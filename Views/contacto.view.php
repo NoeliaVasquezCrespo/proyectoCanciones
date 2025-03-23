@@ -13,6 +13,7 @@
 
     <div class="text-center mt-5">
         <p class="text-muted">Elaborado por: <strong>Noelia Neyarí Vásquez Crespo</strong></p>
+        <p class="text-muted">Correo: <strong>noelia.vasquez.crespo@gmail.com</strong></p>
     </div>
 </div>
 
